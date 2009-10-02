@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
  *
- * @author arnoud
+ * @authmanor arnoud
  */
 @Controller
 public class HelloController {
@@ -20,6 +20,7 @@ public class HelloController {
         if(request.getParameter("message") != null){
             message = request.getParameter("message").toString();
         }
+
         model.addAttribute("Message", message);
         return "hello";
     } 

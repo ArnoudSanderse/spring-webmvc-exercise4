@@ -15,11 +15,13 @@
       <version>2.5</version>
       <scope>provided</scope>
     </dependency>
+
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>jstl</artifactId>
       <version>1.2</version>
     </dependency>
+
     <dependency>
       <groupId>javax.servlet.jsp</groupId>
       <artifactId>jsp-api</artifactId>
@@ -33,13 +35,22 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>org.springframework.web.servlet</artifactId>
       <version>3.0.0.M3</version>
       <type>jar</type>
     </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>org.springframework.test</artifactId>
+      <version>3.0.0.M3</version>
+      <scope>test</scope>
+      <type>jar</type>
+    </dependency>
   </dependencies>
+
   <build>
     <plugins>
       <plugin>
@@ -54,9 +65,11 @@
     </plugins>
     <finalName>spring-webmvc-exercise4</finalName>
   </build>
-    <properties>
-        <netbeans.hint.deploy.server>Tomcat60</netbeans.hint.deploy.server>
-    </properties>
+
+  <properties>
+    <netbeans.hint.deploy.server>Tomcat60</netbeans.hint.deploy.server>
+  </properties>
 </project>
+
 
 
