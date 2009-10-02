@@ -51,20 +51,4 @@ public class HelloControllerTest extends TestCase {
         String result = instance.get(model, request, response);
         assertEquals("The hello view must be called", expResult, result);
     }
-
-    /**
-     * Test of get method, of class HelloController.
-     */
-    public void testGetAttribute() {
-        request = new MockHttpServletRequest("GET", "/hello");
-        response = new MockHttpServletResponse();
-        model = new BindingAwareModelMap();
-
-        System.out.println("getAttribute");
-        HelloController instance = new HelloController();
-        String expResult = "Hello World";
-        request.setAttribute("message", "Hello World");
-        String result = instance.get(model, request, response);
-        assertEquals("There must a GET instance: ", expResult, result);
-    }
 }
